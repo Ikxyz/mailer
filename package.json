@@ -4,9 +4,13 @@
   "description": "",
   "main": "dist/app.js",
   "scripts": {
+    "start": "dist/app.js",
     "serve": "tsc; node dist/app.js",
     "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "12.15.0"
   },
   "author": "",
   "license": "ISC",
