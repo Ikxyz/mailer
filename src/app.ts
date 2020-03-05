@@ -15,7 +15,7 @@ app.get("/", (req, res) => {
     return res.send({ msg: "Mailer Online!", status: true, });
 })
 
-const PORT = 5100;
+const PORT = process.env.PORT || 5100;
 
 app.listen(PORT, () => {
     _print(`server running on port http://localhost:${PORT}`);
