@@ -23,7 +23,7 @@ app.use("/api", mailRoute);
 // Error Handler
 app.use(errorHandler.onErrorOccur);
 
-const PORT = process.env.PORT || 5100;
+const PORT = Number(process.env.PORT || "") || 5100;
 
 app.listen(PORT, () => {
     _print(`server running on port http://localhost:${PORT}`);
